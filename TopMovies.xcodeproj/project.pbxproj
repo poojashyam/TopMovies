@@ -18,6 +18,9 @@
 		0350E88719AD233600E72BD1 /* topmovies-empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 0350E88619AD233600E72BD1 /* topmovies-empty.json */; };
 		0350E88919AD248100E72BD1 /* topmovies-empty-feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0350E88819AD248100E72BD1 /* topmovies-empty-feed.json */; };
 		03BDC68219AD161100E3EB37 /* topmovies.json in Resources */ = {isa = PBXBuildFile; fileRef = 03BDC68119AD161100E3EB37 /* topmovies.json */; };
+		72DAE8F61AFBFF2B00C387B1 /* page2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DAE8F51AFBFF2B00C387B1 /* page2InterfaceController.swift */; };
+		72DAE8F81AFBFF3E00C387B1 /* page3InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DAE8F71AFBFF3E00C387B1 /* page3InterfaceController.swift */; };
+		72DAE8FA1AFBFF5400C387B1 /* subPageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DAE8F91AFBFF5400C387B1 /* subPageInterfaceController.swift */; };
 		72E75D301AFBC7CB0017E86B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E75D2F1AFBC7CB0017E86B /* InterfaceController.swift */; };
 		72E75D321AFBC7CB0017E86B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E75D311AFBC7CB0017E86B /* NotificationController.swift */; };
 		72E75D341AFBC7CB0017E86B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E75D331AFBC7CB0017E86B /* Images.xcassets */; };
@@ -25,7 +28,8 @@
 		72E75D401AFBC7CB0017E86B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E75D3E1AFBC7CB0017E86B /* Interface.storyboard */; };
 		72E75D421AFBC7CB0017E86B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E75D411AFBC7CB0017E86B /* Images.xcassets */; };
 		72E75D451AFBC7CB0017E86B /* TopMovies WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72E75D2A1AFBC7CB0017E86B /* TopMovies WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		72E75D4E1AFBCC9A0017E86B /* page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E75D4D1AFBCC9A0017E86B /* page2.swift */; };
+		72E75D501AFBE8F20017E86B /* movieTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E75D4F1AFBE8F20017E86B /* movieTableRowController.swift */; };
+		72E75D521AFBF4EE0017E86B /* movieDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E75D511AFBF4EE0017E86B /* movieDetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,9 @@
 		0350E88619AD233600E72BD1 /* topmovies-empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "topmovies-empty.json"; sourceTree = "<group>"; };
 		0350E88819AD248100E72BD1 /* topmovies-empty-feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "topmovies-empty-feed.json"; sourceTree = "<group>"; };
 		03BDC68119AD161100E3EB37 /* topmovies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topmovies.json; sourceTree = "<group>"; };
+		72DAE8F51AFBFF2B00C387B1 /* page2InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = page2InterfaceController.swift; sourceTree = "<group>"; };
+		72DAE8F71AFBFF3E00C387B1 /* page3InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = page3InterfaceController.swift; sourceTree = "<group>"; };
+		72DAE8F91AFBFF5400C387B1 /* subPageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subPageInterfaceController.swift; sourceTree = "<group>"; };
 		72E75D2A1AFBC7CB0017E86B /* TopMovies WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TopMovies WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E75D2D1AFBC7CB0017E86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72E75D2E1AFBC7CB0017E86B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -91,7 +98,8 @@
 		72E75D3D1AFBC7CB0017E86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72E75D3F1AFBC7CB0017E86B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		72E75D411AFBC7CB0017E86B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		72E75D4D1AFBCC9A0017E86B /* page2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = page2.swift; sourceTree = "<group>"; };
+		72E75D4F1AFBE8F20017E86B /* movieTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movieTableRowController.swift; sourceTree = "<group>"; };
+		72E75D511AFBF4EE0017E86B /* movieDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movieDetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +194,12 @@
 		72E75D2B1AFBC7CB0017E86B /* TopMovies WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				72E75D4F1AFBE8F20017E86B /* movieTableRowController.swift */,
+				72DAE8F51AFBFF2B00C387B1 /* page2InterfaceController.swift */,
+				72DAE8F71AFBFF3E00C387B1 /* page3InterfaceController.swift */,
+				72DAE8F91AFBFF5400C387B1 /* subPageInterfaceController.swift */,
+				72E75D511AFBF4EE0017E86B /* movieDetailInterfaceController.swift */,
 				72E75D2F1AFBC7CB0017E86B /* InterfaceController.swift */,
-				72E75D4D1AFBCC9A0017E86B /* page2.swift */,
 				72E75D311AFBC7CB0017E86B /* NotificationController.swift */,
 				72E75D331AFBC7CB0017E86B /* Images.xcassets */,
 				72E75D2C1AFBC7CB0017E86B /* Supporting Files */,
@@ -405,9 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DAE8F81AFBFF3E00C387B1 /* page3InterfaceController.swift in Sources */,
+				72E75D501AFBE8F20017E86B /* movieTableRowController.swift in Sources */,
 				72E75D321AFBC7CB0017E86B /* NotificationController.swift in Sources */,
+				72DAE8F61AFBFF2B00C387B1 /* page2InterfaceController.swift in Sources */,
 				72E75D301AFBC7CB0017E86B /* InterfaceController.swift in Sources */,
-				72E75D4E1AFBCC9A0017E86B /* page2.swift in Sources */,
+				72DAE8FA1AFBFF5400C387B1 /* subPageInterfaceController.swift in Sources */,
+				72E75D521AFBF4EE0017E86B /* movieDetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +705,7 @@
 				72E75D491AFBC7CB0017E86B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72E75D4B1AFBC7CB0017E86B /* Build configuration list for PBXNativeTarget "TopMovies WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -697,6 +714,7 @@
 				72E75D471AFBC7CB0017E86B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

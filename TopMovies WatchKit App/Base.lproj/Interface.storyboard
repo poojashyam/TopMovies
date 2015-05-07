@@ -10,61 +10,89 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TopMovies_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Hierarchical-based" id="Fmi-0W-olV">
-                            <connections>
-                                <segue destination="Jgh-p3-v1c" kind="push" identifier="hierarchical-based" id="9q6-aj-Sqw"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Page-based" id="rH1-Dr-c4G">
-                            <connections>
-                                <segue destination="Jgh-p3-v1c" kind="modal" identifier="Page-based" id="ot9-4v-O05"/>
-                            </connections>
-                        </button>
+                        <table alignment="left" id="up0-cS-3O2">
+                            <items>
+                                <tableRow identifier="movieTableViewController" id="FYi-vh-UZ9" customClass="movieTableViewController" customModule="TopMovies_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="A7X-Ks-txJ">
+                                        <items>
+                                            <label alignment="left" text="Label" id="W8y-IR-PQi"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="movieLabel" destination="W8y-IR-PQi" id="5WM-ri-Mpf"/>
+                                        <segue destination="QGs-5V-tpi" kind="push" id="qHw-qD-tjg"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Page2-->
-        <scene sceneID="Whe-op-Lax">
-            <objects>
-                <controller id="Jgh-p3-v1c" customClass="Page2" customModule="TopMovies_WatchKit_Extension">
-                    <items>
-                        <label width="102" height="43" alignment="left" text="Title" id="PvK-rJ-gJR"/>
-                        <label width="130" height="83" alignment="left" text="Label" id="d6G-Em-2XN"/>
-                    </items>
+                    <color key="backgroundColor" red="1" green="0.62465336429999996" blue="0.19454093929999999" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="typeOfSegue" destination="d6G-Em-2XN" id="ftn-c5-TEW"/>
+                        <outlet property="movieTable" destination="up0-cS-3O2" id="6mh-f1-lMe"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="491" y="348"/>
+            <point key="canvasLocation" x="25" y="346"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Movie Detail Interface Controller-->
+        <scene sceneID="Pi1-Pv-UB2">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="QGs-5V-tpi" customClass="movieDetailInterfaceController" customModule="TopMovies_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Label" id="8b0-wG-ZdI"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="movieLabel" destination="8b0-wG-ZdI" id="pAm-Oz-wuv"/>
+                        <segue destination="A9u-Sn-tX1" kind="relationship" relationship="nextPage" id="jRX-m0-gy0"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="249" y="346"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Page2 Interface Controller-->
+        <scene sceneID="bjN-YF-79T">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TopMovies_WatchKit_App" customModuleProvider="target"/>
+                <controller id="A9u-Sn-tX1" customClass="page2InterfaceController" customModule="TopMovies_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Page2" id="gXl-H9-WV3"/>
+                    </items>
+                    <color key="backgroundColor" red="0.069429820729999994" green="0.069315302570000001" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <segue destination="KUv-uj-KY2" kind="relationship" relationship="nextPage" id="oOE-81-NZe"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="449" y="346"/>
+        </scene>
+        <!--Page3 Interface Controller-->
+        <scene sceneID="pzN-iK-vXU">
+            <objects>
+                <controller id="KUv-uj-KY2" customClass="page3InterfaceController" customModule="TopMovies_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Page 3" id="ESI-KS-Uey"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Expand this page" id="PXU-zs-4IY">
+                            <connections>
+                                <segue destination="cEX-qt-Ka9" kind="push" id="zZQ-fQ-sgb"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.16698360870000001" blue="0.23404946300000001" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="654" y="346"/>
+        </scene>
+        <!--Sub Page Interface Controller-->
+        <scene sceneID="k8D-kW-N0Y">
+            <objects>
+                <controller id="cEX-qt-Ka9" customClass="subPageInterfaceController" customModule="TopMovies_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Page 3 sub" id="GpM-qd-9ru"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Go to homepage" id="JJe-8D-pwx"/>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.50887784090909083" blue="0.19617327576648619" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="848" y="347"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ot9-4v-O05"/>
-    </inferredMetricsTieBreakers>
 </document>
