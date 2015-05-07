@@ -25,6 +25,7 @@
 		72E75D401AFBC7CB0017E86B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E75D3E1AFBC7CB0017E86B /* Interface.storyboard */; };
 		72E75D421AFBC7CB0017E86B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E75D411AFBC7CB0017E86B /* Images.xcassets */; };
 		72E75D451AFBC7CB0017E86B /* TopMovies WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 72E75D2A1AFBC7CB0017E86B /* TopMovies WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72E75D4E1AFBCC9A0017E86B /* page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E75D4D1AFBCC9A0017E86B /* page2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		72E75D3D1AFBC7CB0017E86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72E75D3F1AFBC7CB0017E86B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		72E75D411AFBC7CB0017E86B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		72E75D4D1AFBCC9A0017E86B /* page2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = page2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				72E75D2F1AFBC7CB0017E86B /* InterfaceController.swift */,
+				72E75D4D1AFBCC9A0017E86B /* page2.swift */,
 				72E75D311AFBC7CB0017E86B /* NotificationController.swift */,
 				72E75D331AFBC7CB0017E86B /* Images.xcassets */,
 				72E75D2C1AFBC7CB0017E86B /* Supporting Files */,
@@ -404,6 +407,7 @@
 			files = (
 				72E75D321AFBC7CB0017E86B /* NotificationController.swift in Sources */,
 				72E75D301AFBC7CB0017E86B /* InterfaceController.swift in Sources */,
+				72E75D4E1AFBCC9A0017E86B /* page2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
