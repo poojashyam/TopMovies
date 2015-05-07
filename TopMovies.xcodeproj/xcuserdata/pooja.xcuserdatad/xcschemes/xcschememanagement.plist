@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - TopMovies WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TopMovies WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TopMovies.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>0301C80B1995675B00DED54B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72E75D361AFBC7CB0017E86B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
