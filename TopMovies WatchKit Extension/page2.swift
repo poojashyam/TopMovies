@@ -12,8 +12,6 @@ import Foundation
 class Page2: WKInterfaceController {
     
     @IBOutlet weak var label: WKInterfaceLabel!
-    
-    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         var segue = (context as! NSDictionary)["segue"] as! String
