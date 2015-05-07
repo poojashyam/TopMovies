@@ -11,13 +11,13 @@ import Foundation
 
 class Page2: WKInterfaceController {
     
-    @IBOutlet weak var typeOfSegue: WKInterfaceLabel!
+    @IBOutlet weak var label: WKInterfaceLabel!
     
     
-    convenience init (context){
-        self.init(context: context)
-        var segue = (context as NSDictionary)["segue"] as? String
-        var data = (context as NSDictionary) ["data"] as? String
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
+        var segue = (context as! NSDictionary)["segue"] as! String
+        var data = (context as! NSDictionary) ["data"] as! String
         self.label.setText(data)
         
         if segue == "page-based" {
